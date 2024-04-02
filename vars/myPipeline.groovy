@@ -5,7 +5,7 @@ def call() {
             // stage('Git Checkout') {
             //     steps {
             //         script {
-            //             git branch: 'node-dev', url: 'https://github.com/naresh26git/multi-branch.git'
+            //             git branch: 'node-dev', url: 'https://github.com/rajasekarke/multi-branch.git'
             //         }
             //     }
             // }
@@ -29,7 +29,7 @@ def call() {
             stage('Docker Build Images') {
                 steps {
                     script {
-                        sh 'docker build -t naresh2603/multi:v1 .'
+                        sh 'docker build -t kerajasekar/multi:v1 .'
                         sh 'docker images'
                         sh 'docker ps'
                     }
